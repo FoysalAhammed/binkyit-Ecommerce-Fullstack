@@ -2,6 +2,7 @@ import React from 'react'
 import { FaFacebook } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -10,14 +11,17 @@ const Footer = () => {
             <p>© All Rights Reserved 2024.</p>
 
             <div className='flex items-center gap-4 justify-center text-2xl'>
-                <a href='' className='hover:text-primary-100'>
+                <a href='https://www.facebook.com/foysal7788' className='hover:text-primary-100'>
                     <FaFacebook/>
                 </a>
-                <a href='' className='hover:text-primary-100'>
+                <a href='https://www.instagram.com/md_foysal_ahammed28/' className='hover:text-primary-100'>
                     <FaInstagram/>
                 </a>
-                <a href='' className='hover:text-primary-100'>
+                <a href='https://www.linkedin.com/in/foysal-ahammedcse' className='hover:text-primary-100'>
                     <FaLinkedin/>
+                </a>
+                <a href='https://github.com/FoysalAhammed' className='hover:text-primary-100'>
+                    <FaGithub/>
                 </a>
             </div>
         </div>
