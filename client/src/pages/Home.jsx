@@ -5,6 +5,8 @@ import { useSelector } from 'react-redux'
 import { valideURLConvert } from '../utils/valideURLConvert'
 import {Link, useNavigate} from 'react-router-dom'
 import CategoryWiseProductDisplay from '../components/CategoryWiseProductDisplay'
+import Brands from '../components/Brand'
+import Newsletter from '../components/Newsletter'
 
 const Home = () => {
   const loadingCategory = useSelector(state => state.product.loadingCategory)
@@ -87,7 +89,8 @@ const Home = () => {
         })
       }
 
-
+     <Brands/>
+     <Newsletter/>
 
    </section>
   )
