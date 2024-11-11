@@ -7,6 +7,7 @@ import {Link, useNavigate} from 'react-router-dom'
 import CategoryWiseProductDisplay from '../components/CategoryWiseProductDisplay'
 import Brands from '../components/Brand'
 import Newsletter from '../components/Newsletter'
+import PolicyBaner from '../components/PolicyBaner'
 
 const Home = () => {
   const loadingCategory = useSelector(state => state.product.loadingCategory)
@@ -74,7 +75,9 @@ const Home = () => {
               
             )
           }
+   
       </div>
+      <PolicyBaner/>
 
       {/***display category product */}
       {
