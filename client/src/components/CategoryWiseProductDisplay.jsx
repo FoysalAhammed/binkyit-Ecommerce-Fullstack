@@ -96,7 +96,18 @@ const CategoryWiseProductDisplay = ({ id, name }) => {
                             )
                         })
                     }
-     <div className="mt-10 mb-10 bg-white py-8">
+
+ </div>
+                <div className='w-full left-0 right-0 container mx-auto  px-2  absolute hidden lg:flex justify-between'>
+                    <button onClick={handleScrollLeft} className='z-10 relative bg-white hover:bg-gray-100 shadow-lg text-lg p-2 rounded-full'>
+                        <FaAngleLeft />
+                    </button>
+                    <button onClick={handleScrollRight} className='z-10 relative  bg-white hover:bg-gray-100 shadow-lg p-2 text-lg rounded-full'>
+                        <FaAngleRight />
+                    </button>
+                </div>
+            </div>
+            <div className="mt-10 mb-10 bg-white py-8">
   <div className="mx-auto max-w-7xl px-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
     <div className="flex rounded-lg items-center justify-center space-x-4 bg-slate-100 h-20">
       <FaTruck className="text-4xl text-pink-500" />
@@ -128,16 +139,6 @@ const CategoryWiseProductDisplay = ({ id, name }) => {
     </div>
   </div>
 </div>
- </div>
-                <div className='w-full left-0 right-0 container mx-auto  px-2  absolute hidden lg:flex justify-between'>
-                    <button onClick={handleScrollLeft} className='z-10 relative bg-white hover:bg-gray-100 shadow-lg text-lg p-2 rounded-full'>
-                        <FaAngleLeft />
-                    </button>
-                    <button onClick={handleScrollRight} className='z-10 relative  bg-white hover:bg-gray-100 shadow-lg p-2 text-lg rounded-full'>
-                        <FaAngleRight />
-                    </button>
-                </div>
-            </div>
         </div>
     )
 }
